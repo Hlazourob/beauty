@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 4 Design Number 1</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Start Upper Bar -->
+    <header>
+      <div class="innerContainer">
+        <div class="logoImage"><a href="#">My Resturant</a></div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <nav class="navbar-expand-lg navbar-light menubar">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+              <li class="active first"><a href="#">Home</a> </li>
+              <li><a href="#">Our Menu</a> </li>
+              <li><a href="#">About us</a> </li>
+              <li><a href="#">Contact us</a> </li>
+              <li class="last"><a href="#">Special Offers</a> </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="cl"></div>
+      </div>
+      <!-- innerContainer End -->
+    </header>
+    <!-- header end-->
+
+    <div class="cl"></div>
+    <div class="section-1">
+      <div class="layer-1 wow fadeInDown">
+        <h4>HOME / COUPON DETAIL</h4>
+        <h1>Our Discount Coupons</h1>
+        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <div class="cl"></div>
+      </div>
+      <div class="cl"></div>
+    </div>
+    <!-- section-1 end-->
+    <div class="couponDetail wow fadeInDown">
+     <div class="innerContainer">
+         <div class="leftOffer shadowBox">
+          <div class="thumbnailOuter">
+           <div class="bigPic"><img src="images/detailPage.png"></div>
+           <ul>
+             <li><a href="#"><img src="images/thumb-4.png"></a></li>
+             <li><a href="#"><img src="images/thumb-3.png"></a></li>
+             <li><a href="#"><img src="images/thumb-2.png"></a></li>
+           </ul>
+          </div>
+         </div>
+         <div class="rightOffer shadowBox">
+           <h3>Now</h3>
+           <div class="priceDiv">£25.00	<span>£119.00</span></div>
+           <div class="promotionDiv">
+             <div class="save"><span>SAVE</span> 78.99%</div>
+             <div class="promotionEnd"><span>Promotion ends on</span> 5/07/2019</div>
+             <div class="cl"></div>
+           </div>
+             <a href="#" class="payLink">Pay On Arrival</a>
+             <ul>
+              <li>Ten Yoga Lessons at Mario Yoga and Pilates (70% Off)</li>
+              <li>Extra Cost : £0.00</li>
+              <li>Children Discounts : N/A</li>
+              <li>Excludings : N/A</li></li>
+              <li>Exception : N/A</li>
+             </ul>
+         </div>
+         <div class="cl"></div>
+         <div class="fullDiv shadowBox">
+          <h4>Highlights</h4>
+          <p>Ten Yoga Lessons at Mario Yoga and Pilates</p>
+          <h4>The Fine Print</h4>
+          <p>Expires 4 months after purchase. Limit 1 per person, may buy 5 additional as gifts. New customers only. Booking required at least 24 hours in advance, please call 07480757675; provide a coupon code. 24-hour cancellation policy. Pay on arrival. Must be 18 or older.</p>
+          <h4>Details</h4>
+          <p>Mario Yoga and Pilates, as the name suggests, offer professional yoga and Pilates sessions. The classes are suitable for participants of all skills and experience levels. Mario also hosts yoga and fitness workshops including activities such as inversion, backbends and headstands.</p>
+             <div class="highlighted">
+              <ul>
+                <li>No Booking Fees and You Pay at Arrival.</li>
+                <li>FREE Cancellation.</li>
+                <li>No Credit Card Needed.</li>
+                <li>Instant Booking.</li>
+              </ul>
+             </div>
+         </div>
+         <div class="cl"></div>
+        </div>
+      </div><!-- couponDetail end-->
+
+    <div class="cl"></div>
+    <footer class="wow fadeIn"> Powered by Couply </footer>
+    <!-- footer end-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $(function(){
+
+      $(".box").inertiaScroll({
+        parent: $("")
+      });
+
+      $(".box").each(function(){
+        var speed = $(this).data("speed");
+        var height = $(this).height() + "px";
+        $(this).css("line-height",height).text(speed);
+      });
+    });
+
+    $(function(){
+
+      $(".box2").inertiaScroll({
+        parent: $("#healthcare")
+      });
+
+      $(".box2").each(function(){
+        var speed = $(this).data("speed");
+        var height = $(this).height() + "px";
+        $(this).css("line-height",height).text(speed);
+      });
+    });
+
+
+
+    </script>
+  </body>
+</html>
